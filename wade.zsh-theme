@@ -2,25 +2,6 @@
 #
 # agnoster's Theme - https://gist.github.com/3712874
 # A Powerline-inspired theme for ZSH
-#
-# # README
-#
-# In order for this theme to render correctly, you will need a
-# [Powerline-patched font](https://github.com/Lokaltog/powerline-fonts).
-#
-# In addition, I recommend the
-# [Solarized theme](https://github.com/altercation/solarized/) and, if you're
-# using it on Mac OS X, [iTerm 2](http://www.iterm2.com/) over Terminal.app -
-# it has significantly better color fidelity.
-#
-# # Goals
-#
-# The aim of this theme is to only show you *relevant* information. Like most
-# prompts, it will only show git information when in a git working directory.
-# However, it goes a step further: everything from the current user and
-# hostname to whether the last call exited with an error to whether background
-# jobs are running in this shell will all be displayed automatically when
-# appropriate.
 
 ### Segment drawing
 # A few utility functions to make it easy and re-usable to draw segmented prompts
@@ -137,14 +118,15 @@ prompt_hg() {
   fi
 }
 
+# Rewrite current working directory to mimic Fish
 _collapsed_wd() {
   echo $(pwd | perl -pe "
    BEGIN {
       binmode STDIN,  ':encoding(UTF-8)';
       binmode STDOUT, ':encoding(UTF-8)';
-   }; s|^$HOME|~|g; s|/([^/])[^/]*(?=/)|/\$1|g
-")
-} 
+    }; s|^$HOME|~|g; s|/([^/])[^/]*(?=/)|/\$1|g
+  ")
+}
 
 # Dir: current working directory
 prompt_dir() {

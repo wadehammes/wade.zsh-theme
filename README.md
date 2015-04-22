@@ -1,6 +1,6 @@
 #wade.zshtheme for ZSH
 
-![alt img](https://s3.amazonaws.com/f.cl.ly/items/2F1P1L1d2c3x1543032J/Screen%20Shot%202015-04-22%20at%207.04.59%20PM.png)
+![alt img](https://s3.amazonaws.com/f.cl.ly/items/3326223D2x3k2k1v173s/Screen%20Shot%202015-04-22%20at%207.26.17%20PM.png)
 
 A mashup of the popular ZSH themes 'Agnoster' and 'Fishy', with some minor visual tweaks.
 

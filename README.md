@@ -14,6 +14,3 @@ A mashup of the popular ZSH themes 'Agnoster' and 'Fishy', with some minor visua
 ####Recommended to use with:
 iTerm2:
 <a href="http://www.iterm2.com/">http://www.iterm2.com/</a>
-
-Cobalt2 Color Scheme:
-<a href="https://github.com/wesbos/Cobalt2-iterm">https://github.com/wesbos/Cobalt2-iterm</a>
